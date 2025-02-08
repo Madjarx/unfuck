@@ -1,0 +1,10 @@
+{
+  "name": "template",
+  "packageManager": "yarn@4.3.1",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dummy": "echo 'dummy'"
+  }
+}

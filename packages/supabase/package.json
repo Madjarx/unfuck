@@ -1,0 +1,13 @@
+{
+  "name": "supabase",
+  "packageManager": "yarn@4.3.1",
+  "dependencies": {
+    "supabase": "1.190.0"
+  },
+  "scripts": {
+    "start": "npx supabase start",
+    "stop": "npx supabase stop",
+    "reset": "npx supabase db reset",
+    "typegen": "./scripts/typegen-local.sh"
+  }
+}

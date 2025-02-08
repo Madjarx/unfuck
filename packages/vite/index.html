@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Verification</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const tg = window.Telegram?.WebApp;
+        if (tg) {
+          // Initialize the WebApp
+          tg.ready();
+          console.log('Telegram WebApp initialized');
+          // Set theme
+          tg.setHeaderColor('#000000');
+          // Expand to full height
+          tg.expand();
+        } else {
+          console.error('Telegram WebApp not available');
+        }
+      });
+    </script>
+  </body>
+</html>

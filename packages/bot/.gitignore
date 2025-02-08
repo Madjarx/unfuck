@@ -1,0 +1,6 @@
+# Envs
+.env
+
+# Dist
+dist
+build

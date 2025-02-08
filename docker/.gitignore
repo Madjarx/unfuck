@@ -1,0 +1,11 @@
+# ## DEV NOTE ##
+#
+# In this gitignore file, depending on the situation
+# you may want to ignore certain things
+#
+# I personally prefer mapped volumes and in certain cases i
+# require the git to not track them as they cause a lot of headaches
+
+
+# Environment files
+.env

@@ -1,0 +1,22 @@
+{
+  "name": "bot",
+  "packageManager": "yarn@4.3.1",
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.48.1",
+    "@types/node": "^20.14.10",
+    "dotenv": "^16.4.5",
+    "node-cache": "^5.1.2",
+    "telegraf": "^4.16.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js",
+    "config:dev": "./scripts/config.sh --dev",
+    "config:prod": "./scripts/config.sh --prod",
+    "config:staging": "./scripts/config.sh --staging"
+  }
+}
